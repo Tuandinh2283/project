@@ -1,0 +1,729 @@
+/* Thiết lập style cho các phần tử mức cơ bản */
+body {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* Thiết lập style cho wrapper */
+.wraper {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 82.9688px;
+  background-color: #fff;
+  /* Màu nền của wrapper */
+  padding: 1px;
+  /* Khoảng cách giữa nội dung và mép wrapper */
+}
+
+/* Thiết lập style cho menu */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+/* Thiết lập style cho logo */
+.logo {
+  width: 50px;
+  /* Độ rộng của logo */
+  height: auto;
+  /* Giữ tỷ lệ khung hình khi thay đổi kích thước */
+  margin-right: 10px;
+  /* Khoảng cách giữa các phần tử trong menu */
+  padding-left: 150px;
+}
+
+.logo1 {
+  width: 250px;
+  height: auto;
+}
+
+/* Thiết lập style cho danh sách ul */
+ul {
+  list-style-type: none;
+  /* Loại bỏ dấu chấm trước mỗi mục danh sách */
+}
+
+/* Thiết lập style cho mỗi h2 trong ul */
+ul h2 {
+  margin-right: 40px;
+  /* Khoảng cách giữa các mục menu */
+  color: rgb(18, 83, 188);
+  /* Màu chữ của mục menu */
+  font-size: 18px;
+  /* Kích thước chữ của mục menu */
+  cursor: pointer;
+  /* Con trỏ chuột khi di chuyển qua mục menu */
+}
+
+
+/*PHẦN SECTION 1*/
+/* CSS cho ladi-container */
+.ladi-container {
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 600px;
+  /* Chiều cao 100% của viewport */
+  background: url('https://w.ladicdn.com/s950x550/5cf7627695e50d03de997c90/ldp-kvt12-pc-03-2-20231211091010-wugnj.png') left bottom/cover no-repeat,
+    url('https://w.ladicdn.com/s900x700/5cf7627695e50d03de997c90/ldp-kvt12-pc-02-20231213064955-jz3-x.png') left/cover no-repeat,
+    url('https://w.ladicdn.com/s1440x632/5cf7627695e50d03de997c90/ldp-kvt12-pc-01-20231211075011-o8uic.jpg') center/cover no-repeat;
+
+}
+
+/* kích thước cố định cho background*/
+.ladi-container {
+  background-size: auto;
+  display: inline-block;
+}
+
+.click {
+  display: inline-flex;
+  /* show button hàng ngang*/
+}
+
+/* CSS cho button */
+.nutbam {
+  padding-left: 300px;
+  padding-top: 410px;
+}
+
+.button {
+  width: 150px;
+  height: 43px;
+  background-color: #fff;
+  /* Màu nền của button */
+  color: rgb(18, 83, 188);
+  /* Màu chữ trong button */
+  padding: 10px 20px;
+  /* Đặt khoảng cách giữa chữ và mép của button */
+  font-size: 18px;
+  /* Kích thước phông chữ cho button */
+  border: none;
+  /* Loại bỏ đường viền của button */
+  cursor: pointer;
+  /* Hiển thị con trỏ tay khi di chuyển qua button */
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 80px;
+}
+
+/*điều chỉnh kích thước cố định cho từng background */
+.ladi-container {
+  background-size: 600px 199px, 588px 379px, 2300px 600px;
+  /* Vị trí của từng background */
+  background-position: bottom 100px left 270px, bottom 280px left 270px, center;
+}
+
+/* Chia đều khoảng cách giữa các background */
+.ladi-container>* {
+  flex: 1;
+  margin: 10px;
+}
+
+.nutbam button :hover {
+  background-color: #ffcc00;
+}
+
+/* PHẦN SECTION 2*/
+.section h2 {
+  color: rgb(18, 83, 188);
+  /* Màu chữ trong thẻ */
+  text-align: center;
+}
+
+.section p {
+  text-align: left;
+}
+
+/* CSS cho phần sản phẩm */
+.product-container {
+  border: none;
+  display: inline-flex;
+  /* margin-left: 220px; */
+  /* margin-right: 50px; */
+  justify-content: space-around;
+  align-items: stretch;
+  /* padding: 10px 50px 50px 5px; */
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.product {
+  width: 300px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+
+}
+
+.product h3 {
+  color: rgb(18, 83, 188);
+  /* Màu chữ trong thẻ */
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.product p {
+  color: rgb(18, 83, 188);
+  /* Màu chữ trong thẻ */
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Chỉnh màu sắc theo ý muốn */
+
+.product {
+  background-color: #ffffff;
+}
+
+/* PHẦN SECTION 3*/
+
+#difference {
+  background-color: #f8f8f8;
+  /* màu cho background */
+  text-align: center;
+}
+
+.difference-content {
+  max-width: 500px;
+  /*chiều rộng tối đa*/
+  margin: 0 auto;
+}
+
+.difference-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  padding-top: 3px;
+}
+
+#difference {
+  width: 500px;
+  height: 402px;
+  display: inline-block;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+.difference-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.difference-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  padding-top: 0px;
+}
+
+.section {
+  height: 610px;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* Thiết lập style cho nội dung của mỗi section */
+.section-content {
+  width: 1140px;
+  height: 400px;
+  color: rgb(18, 83, 188);
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.price-table {
+  width: 100%;
+  /* Chiều rộng của bảng là 100% */
+  border-collapse: collapse;
+  /* Gộp đường viền của các ô */
+  margin-top: 20px;
+  /* Khoảng cách giữa tiêu đề và bảng */
+}
+
+/* Thiết lập style cho các ô tiêu đề */
+.price-table th {
+  background-color: rgb(18, 83, 188);
+  /* Màu nền của ô tiêu đề */
+  color: #fff;
+  /* Màu chữ của ô tiêu đề */
+  padding: 10px;
+  /* Khoảng cách giữa nội dung và mép của ô tiêu đề */
+}
+
+/* Thiết lập style cho các ô dữ liệu */
+.price-table td {
+  color: rgb(18, 83, 188);
+  border: 1px solid #ccc;
+  /* Đường viền của ô dữ liệu */
+  padding: 10px;
+  /* Khoảng cách giữa nội dung và mép của ô dữ liệu */
+}
+
+/* Thiết lập style cho hàng lẻ của bảng */
+.price-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+  /* Màu nền của các hàng lẻ */
+}
+
+
+
+/* PHẦN SECTION 7*/
+/* THIẾT LẬP CHO PHẦN CÂU HỎI THƯỜNG GẶP*/
+/* Thiết lập style cho danh sách câu hỏi */
+.faq-list {
+  margin: 16px 0 30px 0;
+  display: block;
+  list-style-type: none;
+  /* Loại bỏ dấu chấm trước mỗi mục danh sách */
+}
+
+/* Thiết lập style cho mỗi mục câu hỏi */
+.faq-list li {
+  margin-bottom: 10px;
+  /* Khoảng cách giữa các mục câu hỏi */
+}
+
+/* Thiết lập style cho tiêu đề của mỗi mục câu hỏi */
+.faq-list h3 {
+  padding: 10px;
+  /*khoảng cách giữa các thẻ h3*/
+  text-align: left;
+  font-size: 18px;
+  /* Kích thước chữ của tiêu đề câu hỏi */
+  color: rgb(18, 83, 188);
+  /* Màu chữ của tiêu đề câu hỏi */
+  white-space: pre-line;
+}
+
+/* Thiết lập style cho nội dung của mỗi mục câu hỏi */
+.faq-list p {
+  font-size: 14px;
+  /* Kích thước chữ của nội dung câu hỏi */
+  color: rgb(18, 83, 188);
+  /* Màu chữ của nội dung câu hỏi */
+  white-space: pre-line;
+  /* Giữ nguyên khoảng trắng và xuống dòng */
+  text-align: left;
+  width: 885px;
+  height: auto;
+}
+
+/* Thiết lập style cho mục câu hỏi mở rộng */
+.faq-list li.open h3 {
+  color: rgb(18, 83, 188);
+  /* Màu chữ của tiêu đề câu hỏi khi mở rộng */
+}
+
+/* Thiết lập style cho nội dung câu hỏi mở rộng */
+.faq-list li.open p {
+  display: block;
+  /* Hiển thị nội dung câu hỏi khi mở rộng */
+}
+
+.faq-list li {
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-list li.open {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.faq-list li p {
+  display: none;
+}
+
+/* Kiểu cho menu-dathen-background */
+.menu-dathen {
+  height: 112px;
+  text-align: center;
+  padding-left: 50px;
+  background-color: rgb(18, 83, 188);
+  /* Màu nền của phần */
+  color: white;
+  /* Màu chữ trong phần */
+  padding: 5px;
+  margin-top: 80px;
+}
+
+.menu-dathen-background h3 {
+  /* Kích thước phông chữ cho nội dung */
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+}
+
+.click button {
+  background-color: #fff;
+  /* Màu nền của button */
+  color: rgb(18, 83, 188);
+  /* Màu chữ trong button */
+  padding: 10px 20px;
+  /* Đặt khoảng cách giữa chữ và mép của button */
+  font-size: 18px;
+  /* Kích thước phông chữ cho button */
+  border: none;
+  /* Loại bỏ đường viền của button */
+  cursor: pointer;
+  /* Hiển thị con trỏ tay khi di chuyển qua button */
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* CSS của bạn để tạo kiểu cho form và trang web */
+#appointment-section {
+  background-color: rgb(18, 83, 188) !important;
+  /* Màu nền của phần */
+  ;
+  text-align: left;
+}
+
+/* CSS để ẩn form ban đầu */
+.hidden {
+  display: none;
+}
+
+/* Định dạng cho label và input */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: blue;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+/* Định dạng cho button */
+form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #d4d717;
+}
+
+/* Định dạng cho form */
+#appointment-form {
+  max-width: 621px;
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url('https://img4.thuthuatphanmem.vn/uploads/2019/12/09/hinh-nen-hoa-van-mau-vang_041106432.jpg') center/cover no-repeat;
+  /* Thay 'duong_dan_den_hinh_anh.jpg' bằng đường dẫn đến hình ảnh bạn muốn sử dụng */
+}
+
+/* Xóa bỏ margin và padding thừa */
+#appointment-form form {
+  margin: 0;
+  padding: 0;
+}
+
+#section5 {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+#clock {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.registration-form {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #a41111;
+  border-radius: 5px;
+}
+
+.registration-form h3 {
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+/* Định dạng cho reCAPTCHA */
+.g-recaptcha {
+  margin-bottom: 16px;
+}
+
+form button {
+  background-color: #1a1aca;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #afd215;
+}
+
+#section6 {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.process-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.process-step {
+  border-radius: 6px;
+  background-color: rgb(98, 223, 211);
+  width: 200px;
+  margin: 20px;
+}
+
+.process-step img {
+  max-width: 100%;
+
+}
+
+.process-step p {
+  color: rgb(18, 83, 188);
+  /* Màu chữ của tiêu đề câu hỏi */
+  margin-top: 10px;
+  font-size: 16px;
+  margin-left: 75px;
+}
+
+/* dòng kẻ ngang*/
+.long-horizontal-line {
+  border-bottom: 2px solid #1d44c6;
+  /* Màu và độ rộng của đường kẻ ngang */
+  margin: 20px 0;
+  /* Khoảng cách từ trên xuống */
+}
+
+.long-horizontal-line img {
+  width: 15px;
+  /* Đặt chiều rộng của hình ảnh  */
+  height: 15px;
+  /* Đảm bảo tỷ lệ khung hình không bị méo */
+  padding: 0px 140px 0px 140px;
+  position: relative;
+  display: inline-block;
+  justify-content: space-between;
+  /* Các icon cách nhau một khoảng bằng nhau */
+  align-items: center;
+  /* Các icon được căn giữa theo chiều dọc */
+
+}
+
+.process-container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.process-step1 {
+  border-radius: 6px;
+  background-color: #fff;
+  width: 200px;
+  margin: 20px;
+}
+
+.process-step1 p {
+  margin-left: 30px;
+}
+
+.section h2 {
+  color: rgb(18, 83, 188);
+  /* Màu chữ trong thẻ */
+  text-align: center;
+}
+
+.section p {
+  text-align: left;
+}
+
+/* CSS cho phần sản phẩm */
+.khung-container {
+  border: none;
+  display: inline-flex;
+  margin-left: 50px;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-top: 10px;
+  /* Thêm khoảng cách giữa phần tiêu đề và sản phẩm */
+}
+
+.the {
+  width: 300px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.the h3 {
+  text-align: center;
+}
+
+.the img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+
+}
+
+.the h3 {
+  color: rgb(18, 83, 188);
+  /* Màu chữ trong thẻ */
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.the p {
+  color: rgb(18, 83, 188);
+  /* Màu chữ trong thẻ */
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Chỉnh màu sắc theo ý muốn */
+
+.the {
+  background-color: #c9e7f0;
+}
+
+/* Phần kiểu cho phần "dathen" */
+.dathen {
+  background-color: rgb(18, 81, 188);
+  height: 143px;
+}
+
+/* Phần kiểu cho phần "dathen-container" */
+.dathen-container {
+  display: inline-block;
+  max-width: 1140px;
+  padding: 0px 50px 10px 60px;
+}
+
+/* Phần kiểu cho ảnh bên trong phần "dathen" */
+.dathen-container img {
+  width: 200px;
+  height: 123.228px;
+  margin-left: 146.26px;
+  max-width: 100%;
+  /* Đặt chiều rộng tối đa cho ảnh là 100% của phần "dathen-container" */
+  height: auto;
+  /* Tự động điều chỉnh chiều cao của ảnh để duy trì tỷ lệ khung hình */
+  border-radius: 8px;
+  /* Làm cho góc của ảnh trở nên bo tròn với bán kính là 8px */
+}
+
+/* Phần kiểu cho phần "thong tin" bên trong phần "dathen-container" */
+.thong-tin {
+  display: inline-block;
+  margin-top: 5px;
+  /* Thêm khoảng cách trên cho phần "thong-tin" */
+}
+
+/* Phần kiểu cho tiêu đề trong phần "thong-tin" */
+.thong-tin h3 {
+  font-size: 18px;
+  /* Đặt kích thước font cho tiêu đề */
+  line-height: 1.5;
+  /* Đặt độ dài dòng là 1.5 lần kích thước font */
+  color: #fff;
+  /* Đặt màu chữ cho tiêu đề */
+  text-align: center;
+}
+
+/* Phần kiểu cho màu chữ "RĂNG SỨ CAO CẤP" trong tiêu đề */
+.thong-tin h3 span {
+  color: yellow;
+  /* Đặt màu chữ cho phần được bao bọc trong thẻ span */
+}
+
+/* Phần kiểu cho nút "ĐẶT HẸN NGAY" */
+.dathen-ngay {
+  background-color: #fff;
+  /* Đặt màu nền cho nút */
+  color: rgb(18, 83, 188);
+  /* Đặt màu chữ cho nút */
+  padding: 10px 20px;
+  /* Thêm khoảng cách bên trong nút */
+  font-size: 16px;
+  /* Đặt kích thước font cho nút */
+  border: none;
+  /* Loại bỏ viền của nút */
+  border-radius: 5px;
+  /* Làm cho góc của nút trở nên bo tròn với bán kính là 5px */
+  cursor: pointer;
+  /* Biến đổi con trỏ thành dạng "hand" khi di chuột qua nút */
+}
+
+/* Hiệu ứng khi di chuột qua nút "ĐẶT HẸN NGAY" */
+.dathen-ngay:hover {
+  background-color: #f7f8f9;
+  /* Đặt màu nền khác khi di chuột qua nút */
+  transition: background-color 0.3s ease-in-out;
+  /* Áp dụng hiệu ứng chuyển động cho thay đổi màu nền trong khoảng thời gian 0.3 giây, với hiệu ứng dễ dàng vào và ra */
+}
+
+.contaiter_video_difference {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 1140px;
+  margin: 10px auto;
+}
+/* .section_fullpage{
+ width: 100%;
+} */

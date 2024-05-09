@@ -1,0 +1,41 @@
+.doctorAdmin_print{
+    background-color: rgb(11, 152, 246);
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    display: none;
+}
+.doctorAdmin{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.doctorAdmin_container{
+    box-shadow: 2px 2px 2px rgb(49, 50, 51, 0.3);
+    padding: 10px;
+    width: 480px;
+}
+.doctorAdmin_container textarea{
+    padding: 0 20px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+form>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+form button{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 10px; 
+    outline: none;
+    border: none;
+    color: rgb(255, 254, 253);
+    background-color:rgb(236, 41, 41);
+}

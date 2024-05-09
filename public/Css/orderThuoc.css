@@ -1,0 +1,145 @@
+/* CSS cho modal */
+.modal_datthuoc {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* CSS cho nội dung modal */
+.modal-content_datthuoc {
+    position: relative;
+    margin: 10% auto;
+    width: 100%; /* Chiếm 70% width của màn hình */
+    height: 800px;
+    max-width: 1100px; /* Giới hạn kích thước của modal */
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* CSS cho nút đóng modal */
+.close_datthuoc {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* CSS cho panel bên trái */
+.left-panel {
+    float: left;
+    width: 70%; /* Chiếm 70% width của modal-content */
+    padding-right: 10px;
+    box-sizing: border-box; /* Đảm bảo padding không tác động đến chiều rộng */
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 9px;
+}
+
+.drug {
+    width: calc(25% - (16px / 2)); /* Chiếm 25% width của parent và trừ đi khoảng cách giữa các sản phẩm (16px) */
+    height: 280px;
+    max-height: 290px;
+    margin-bottom: 1%; /* Khoảng cách giữa các sản phẩm */
+    text-align: center; /* Căn giữa nội dung */
+    border: 1px solid #ccc;
+}
+
+.drug img {
+    width: 100%; /* Đảm bảo ảnh thuốc điền vào kích thước của phần tử cha */
+    height: auto; /* Đảm bảo tỷ lệ khung hình của ảnh được giữ nguyên */
+}
+.drug h3,
+.drug img,
+.drug p,
+.drug button {
+    margin-top: 6px; /* Khoảng cách trên của mỗi phần tử trong box drug */
+    margin-bottom: 6px; /* Khoảng cách dưới của mỗi phần tử trong box drug */
+}
+.drug button {
+    padding: 6px;
+    width: 50%;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.drug a {
+    padding: 4px ;
+    width: 50%;
+    font-size: 12px;
+ }
+.container_button_xemchitiet{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 6px 10px;
+}
+
+/* CSS cho panel bên phải */
+.right-panel {  
+      border-left: 1px solid #ccc;
+    float: right;
+    width: 30%; /* Chiếm 30% width của modal-content */
+    height: 100%;
+    padding-left: 10px;
+    box-sizing: border-box; /* Đảm bảo padding không tác động đến chiều rộng */
+    /* background-color: rgb(139, 101, 101); */
+    display: flex;
+    flex-direction: column;
+}
+hr{
+margin: 6px 0;
+}
+.item_wrapper {
+    height: 400px; /* Chiều cao của items-wrapper là 50% của right-panel */
+    overflow-y: auto; /* Tạo thanh cuộn dọc khi cần thiết */
+}
+.item {
+    display: flex;
+    align-items: center; /* Căn giữa các phần tử trong item */
+    height: 100px; /* Đặt chiều cao cho mỗi item, có thể điều chỉnh theo nhu cầu */
+    padding: 10px; /* Tạo khoảng cách nội dung từ viền của mỗi item */
+    justify-content: space-evenly;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 6px;
+}
+
+.item img {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của item */
+}
+
+.item p {
+    margin: 5px 0; /* Khoảng cách giữa các đoạn văn bản trong item */
+}
+
+.item-image {
+    width: 70px; /* Kích thước của box chứa ảnh */
+    height: 70px; /* Kích thước của box chứa ảnh */
+    border-radius: 10px;
+    overflow: hidden; /* Ẩn bất kỳ phần nào của ảnh vượt ra khỏi box */
+}
+.item-image img {
+    width: 100%; /* Kích thước của ảnh sẽ đầy đủ chiếm toàn bộ box */
+    height: auto; /* Chiều cao của ảnh sẽ tự động điều chỉnh để giữ nguyên tỉ lệ */
+}
+
+#checkout-button{
+padding: 6px;
+margin-top: 6px;
+}

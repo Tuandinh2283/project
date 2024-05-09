@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table,tr,td{
+    text-align: center;
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+.header-first>td{
+    text-align: center;
+    font-weight: 600;
+    background-color: rgb(4, 143, 235);
+    color: rgb(249, 249, 250);
+    border: 1px solid white;
+    
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    text-align: center;
+    padding: 20px;
+    color: rgb(4, 143, 235);
+}
+.name{
+    text-align: start;
+}
+#QLKH{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#QLKH button{
+    text-align: center;
+    padding: 5px 10px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    background-color: rgb(21, 141, 211);
+    color: rgb(254, 255, 255);
+}
+#QLKH button:hover{
+    background-color: rgb(148, 153, 153);
+}
+.form-container button{
+    text-align: center;
+    padding: 5px 10px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    background-color: rgb(21, 141, 211);
+    color: rgb(254, 255, 255);
+}
+.form-container button:hover{
+    background-color: rgb(148, 153, 153);
+}
+
